@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dialog" />
+
+        <Button
+            android:id="@+id/btnDialogFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dialog Fragment" />
+
+        <Button
+            android:id="@+id/btnModalBS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modal Bottom Sheet" />
+
+        <Button
+            android:id="@+id/btnPersistentBS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persistent Bottom Sheet" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/persistent_bs">
+    </include>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
